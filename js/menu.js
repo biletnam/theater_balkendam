@@ -1,4 +1,4 @@
-const paginas = ["Home","Voorstellingen","Onze vrienden","Informatie","Contact"];
+const paginas = ["Home","Voorstellingen","Onze vrienden","Informatie","Contact","nieuwe pagina!"];
 const contentmargin = 20;
 let last_page = "";
 
