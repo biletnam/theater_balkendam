@@ -1,0 +1,42 @@
+body{
+    height:4600px;
+    font-family:arial;
+}
+#voorstellingen-content{
+    margin: auto;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%);
+}
+#container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 900px;
+    width: 100vw;
+    margin: auto;
+}
+
+.entry {
+    height: 100px;
+    width: 40%;
+    min-width: 40vw;
+    margin: 2px;
+    flex-grow: 1;
+    color:white;
+}
+.entry~.entry:not(:nth-child(-1n+2))::before{
+    content:"";
+    display:block;
+    height:1px;
+    background-color:white;
+    bottom:0px;
+}
+.entry img{
+    float: left;
+    margin-right: 5px;
+}
+.entry h2,.entry p{
+    margin:5px;
+}
