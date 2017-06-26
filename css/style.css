@@ -209,19 +209,11 @@ body {
 .entry {
     height: 100px;
     width: 40%;
-    min-width: 40vw;
+    min-width: 445px;
     margin: 2px;
     flex-grow: 1;
     color: white;
     margin-bottom: 10px;
-}
-
-.entry ~ .entry:not(:nth-child(-1n+2))::before {
-    content: "";
-    display: block;
-    height: 1px;
-    background-color: white;
-    bottom: 0px;
 }
 
 .entry img {
@@ -252,7 +244,7 @@ body {
     transform: translate(-50%);
 }
 
-#container {
+#wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
