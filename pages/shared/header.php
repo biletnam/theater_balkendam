@@ -1,4 +1,4 @@
-//©Brandon v dongen 2017
+<!--©Brandon v dongen 2017-->
 <head>
     <meta charset="utf_8">
     <title>Theater Balkendam</title>
