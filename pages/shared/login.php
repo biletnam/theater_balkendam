@@ -1,6 +1,6 @@
 <?php
 
-echo "<div id='login_container' class='open'>";
+echo "<div id='login_container' class=''>";
     echo "<table>";
         echo "<tr>";
             echo "<td>";
