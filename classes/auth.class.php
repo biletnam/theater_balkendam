@@ -1,4 +1,4 @@
-//©Brandon v dongen 2017
+    <!--©Brandon v dongen 2017-->
 <?php
 
 class Auth
@@ -31,7 +31,7 @@ class Auth
         if (!is_numeric($id = $this->id_user)) {
             return false;
         } else {
-            $result = $this->database->prepared_query('SELECT id_user, username, nickname FROM users WHERE users.id_user=?', [$this->id_user]);
+            $result = $this->database->prepared_query('SELECT id_user, username FROM users WHERE users.id_user=?', [$this->id_user]);
             if ($result) {
                 $this->username = $result->username;
                 $this->nickname = $result->nickname;
@@ -60,17 +60,6 @@ class Auth
             return false;
         }
     }
-
-    public function logout()
-    {
-        unset($_SESSION[self::SESSION_VAR]);
-    }
-
-    public function get_permissions()
-    {
-        return $this->database->prepared_query("SELECT users.id_user, users.nickname, permissions.see_all, permissions.edit_all, permissions.remove_all FROM permissions INNER JOIN users ON users.id_user=permissions.id_permissions WHERE users.id_user=?", [$this->id_user]);
-    }
-
     public function get_id()
     {
         if (isset($this->id_user)) {
@@ -80,14 +69,8 @@ class Auth
         }
 
     }
-
     public function get_username()
     {
         return $this->username;
-    }
-
-    public function get_nickname()
-    {
-        return $this->nickname;
     }
 }

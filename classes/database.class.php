@@ -1,4 +1,3 @@
-//©Brandon v dongen 2017
 <?php
 class Database
 {

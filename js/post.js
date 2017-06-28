@@ -1,3 +1,4 @@
+// ©Brandon v dongen 2017
 function getXmlDoc() {
     var xmlDoc;
     if (window.XMLHttpRequest) {
