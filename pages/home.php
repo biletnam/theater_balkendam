@@ -13,7 +13,29 @@ require("shared/header.php");
     ?>
 </div>
 <div id="content_container">
-    home
+    <div id="home_wrapper">
+        <div class="entry">
+            <div class="img"><img src="../images/placeholder_big.png"></div>
+            <div class="entry-content">
+                <h2>title</h2>
+                <p>body</p>
+            </div>
+        </div>
+        <div class="entry">
+            <div class="img"><img src="../images/placeholder_big.png"></div>
+            <div class="entry-content">
+                <h2>title</h2>
+                <p>body</p>
+            </div>
+        </div>
+        <div class="entry">
+            <div class="img"><img src="../images/placeholder_big.png"></div>
+            <div class="entry-content">
+                <h2>title</h2>
+                <p>body</p>
+            </div>
+        </div>
+    </div>
 </div>
 <?php
 require("shared/footer.php");

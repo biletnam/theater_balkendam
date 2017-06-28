@@ -13,7 +13,7 @@ require("shared/header.php");
     ?>
 </div>
 <div id="content_container">
-    <div id="wrapper">
+    <div id="voorstellingen_wrapper">
         <div class="entry">
             <div class="img"><img src="../images/placeholder.png"></div>
             <div class="entry-content">
